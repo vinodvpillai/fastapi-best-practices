@@ -1,0 +1,7 @@
+fastapi[all]
+fastapi-utils   
+pydantic
+pydantic-settings
+psycopg2-binary
+sqlalchemy
+passlib[bcrypt]
