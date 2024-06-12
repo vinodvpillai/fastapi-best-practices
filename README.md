@@ -28,9 +28,10 @@ This project is a FastAPI REST web application for managing "Post" entities, bui
 │   │   ├── post_controller.py
 │   ├── core
 │   │   ├── __init__.py
-│   │   ├── config.py
+│   │   ├── logger_config.py
 │   │   ├── database.py
-│   │   ├── middleware.py
+│   │   ├── log_middleware.py
+        ├── env_settings.py
 │   └── main.py
 ```
 
@@ -44,7 +45,7 @@ This project is a FastAPI REST web application for managing "Post" entities, bui
 - Pydantic
 - Uvicorn
 - Starlette
-- A database URL specified in a `.env` file
+- A database variable specified in a `.env` file
 
 ### Installation
 
@@ -71,7 +72,7 @@ This project is a FastAPI REST web application for managing "Post" entities, bui
 4. **Create a `.env` file**:
 
    ```sh
-   echo "DATABASE_URL=sqlite:///./test.db" > .env
+   echo "DATABASE_PORT=5432" > .env
    ```
 
 ### Running the Application
@@ -112,7 +113,7 @@ Located in the `app/controller/post_controller.py` file, these classes define th
 
 ### Middleware
 
-Custom logging middleware is located in the `app/core/middleware.py` file. CORS middleware is added in `app/main.py`.
+Custom logging middleware is located in the `app/core/log_middleware.py` file. CORS middleware is added in `app/main.py`.
 
 ## Example Usage
 
