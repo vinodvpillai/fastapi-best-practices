@@ -1,5 +1,3 @@
-Here's a detailed README file for the FastAPI REST web application:
-
 # FastAPI REST Web Application
 
 This project is a FastAPI REST web application for managing "Post" entities, built using object-oriented principles. It includes endpoints for creating, reading, updating, and deleting posts.
